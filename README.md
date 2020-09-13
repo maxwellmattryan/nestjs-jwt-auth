@@ -17,4 +17,12 @@ JWT_SECRET=mysecret
 JWT_EXPIRES_IN=21600s
 ```
 
-With this, the server should be good to get started handling requests. Thanks for checking out this repository!
+With this, the server should be good to get started handling requests. All you need to do is start it!
+
+```
+$ npm run start
+OR
+$ npm run start:dev
+```
+
+Thanks for checking out this repository!
