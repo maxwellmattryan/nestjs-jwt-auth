@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
+import * as cookieParser from 'cookie-parser';
 import * as morgan from 'morgan';
 
 async function bootstrap() {
@@ -8,7 +9,9 @@ async function bootstrap() {
 
     app.use(morgan('tiny'));
 
-    await app.listen(3001);
+    app.use(cookieParser());
+
+    await app.listen(3000);
 }
 
 bootstrap();

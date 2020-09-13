@@ -5,3 +5,9 @@ export class UserAlreadyExistsException extends BadRequestException {
         super('User already exists.');
     }
 }
+
+export class WrongUserCredentialsWereProvidedException extends BadRequestException {
+    constructor() {
+        super('The wrong user credentials were provided.');
+    }
+}
